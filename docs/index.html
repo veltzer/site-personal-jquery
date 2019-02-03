@@ -6,10 +6,13 @@
 		<script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
 		<script type="text/javascript" src="js/pagination.min.js"></script>
 		<script type="text/javascript">
+			$(document).ready(function() {
+					$('.tabs').tabslet();
+			});
 		</script>
 	</head>
 	<body>
-		<div class="tabs" data-toggle="tabslet">
+		<div class="tabs">
 			<ul>
 				<li><a href="#tab-about">About</a></li>
 				<li><a href="#tab-books">Books I'm reading</a></li>
