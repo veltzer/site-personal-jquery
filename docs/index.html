@@ -2,9 +2,22 @@
 <html>
 	<head>
 		<title>Welcome to Mark Veltzer's site</title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
+		<script type="text/javascript" src="js/pagination.min.js"></script>
+		<script type="text/javascript">
+		</script>
 	</head>
 	<body>
-		<h1 align="center">Welcome to Mark Veltzer's site</h1>
-		<p>here is some content...</p>
+		<div class="tabs" data-toggle="tabslet">
+			<ul>
+				<li><a href="#tab-about">About</a></li>
+				<li><a href="#tab-books">Books I'm reading</a></li>
+			</ul>
+			<div id="tab-about">
+			</div>
+			<div id="tab-books">
+			</div>
+		</div>
 	</body>
 </html>
