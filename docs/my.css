@@ -1,20 +1,36 @@
+/* the whole top bar */
 .tabs > ul {
 	list-style: none outside none;
+	padding-left: 0;
 	margin: 0;
+	background: lightblue;
 }
 
+/* the whole cell of each selection */
 .tabs > ul > li {
-	background: white;
-	border-bottom: 4px solid #E5E5E5;
+	border-style: none;
 	margin: 0 10px 0 0;
 	display: inline-block;
 }
 
+/* only the active cell */
+.tabs > ul > li.active {
+	border-bottom: 4px solid #68a697 !important; 
+}
+
+/* and actually references */
 .tabs > ul > li > a {
-    color: #ccc;
-    display: block;
-    font-size: 18px;
-    font-weight: 300;
-    padding: 14px 24px;
-    text-decoration: none;
+	color: black;
+	display: block;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 14px 24px;
+	text-decoration: none;
+	/* this means that if the link it selected it will not have a border outline */
+	outline: none;
+}
+
+/* content of each tab */
+.tabs > div {
+	padding: 14px 24px;
 }
