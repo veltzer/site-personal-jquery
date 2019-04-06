@@ -34,3 +34,9 @@
 .tabs > div {
 	padding: 14px 24px;
 }
+
+/* the whole site */
+BODY {
+	/* setup a modern font for the site */
+	font-family: helvetica;
+}
