@@ -1,9 +1,17 @@
+:root {
+	--body-background: #e3e7f1;
+	--selected-underline: #494ca2;
+	--top-bar-background: #c6cbef;
+	--top-bar-color: black;
+	--unused: #8186d5;
+}
+
 /* the whole top bar */
 .tabs > ul {
 	list-style: none outside none;
 	padding-left: 0;
 	margin: 0;
-	background: lightblue;
+	background: var(--top-bar-background);
 }
 
 /* the whole cell of each selection */
@@ -15,12 +23,12 @@
 
 /* only the active cell */
 .tabs > ul > li.active {
-	border-bottom: 4px solid #68a697 !important; 
+	border-bottom: 4px solid var(--selected-underline) !important; 
 }
 
 /* and actually references */
 .tabs > ul > li > a {
-	color: black;
+	color: var(--top-bar-color);
 	display: block;
 	font-size: 18px;
 	font-weight: 300;
@@ -39,4 +47,5 @@
 BODY {
 	/* setup a modern font for the site */
 	font-family: helvetica;
+	background: var(--body-background);
 }
