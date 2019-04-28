@@ -1,2 +1,2 @@
 #!/bin/sh
-firefox docs/index.html &
+firefox http://localhost:8000/ &

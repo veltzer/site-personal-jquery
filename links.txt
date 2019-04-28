@@ -5,6 +5,7 @@ the tabs widget:
 the pagination widget:
 	https://pagination.js.org/index.html
 	I now have version 2.1.4
+	https://github.com/superRaytin/paginationjs
 
 the normalize css:
 	https://necolas.github.io/normalize.css/

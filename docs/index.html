@@ -7,16 +7,36 @@
 		<script type="text/javascript" src="js/pagination.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('.tabs').tabslet({
+				$('#tabs').tabslet({
 					animation: true,
+				});
+				dataContainer=$('#books-data');
+				$('#pagination-container').pagination({
+					dataSource: "http://localhost:8000/books-data.json",
+					locator: 'items',
+					totalNumberLocator: function(response) {
+						return 2;
+					},
+					pageSize: 4,
+					ajax: {
+						beforeSend: function() {
+							dataContainer.html('Loading data...');
+						}
+					},
+					callback: function(data, pagination) {
+						// template method of yourself
+						//var html = template(data);
+						dataContainer.html('got it');
+					}
 				});
 			});
 		</script>
 		<link rel="stylesheet" href="normalize.css"></link>
+		<link rel="stylesheet" href="pagination.css"></link>
 		<link rel="stylesheet" href="my.css"></link>
 	</head>
 	<body>
-		<div class="tabs">
+		<div class="tabs" id="tabs">
 			<ul>
 				<li><a href="#tab-about">About</a></li>
 				<li><a href="#tab-books">Books I'm reading</a></li>
@@ -27,6 +47,8 @@
 			</div>
 			<div id="tab-books">
 				<h1>Content of books I'm reading</h1>
+				<div id="books-data"></div>
+				<div id="pagination-container"></div>
 			</div>
 			<div id="tab-shared-drive">
 				<h1>How can you access my publicly shared folder?</h1>
