@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
 	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+		<meta content="utf-8" http-equiv="encoding"/>
 		<title>Welcome to Mark Veltzer's site</title>
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
@@ -15,7 +17,7 @@
 					dataSource: "http://localhost:8000/books-data.json",
 					locator: 'items',
 					totalNumberLocator: function(response) {
-						return 2;
+						return response.items.length;
 					},
 					pageSize: 4,
 					ajax: {
@@ -26,7 +28,7 @@
 					callback: function(data, pagination) {
 						// template method of yourself
 						//var html = template(data);
-						dataContainer.html('got it');
+						dataContainer.html('name is '+data[0].name);
 					}
 				});
 			});
@@ -46,7 +48,6 @@
 				<h1>Content of about me</h1>
 			</div>
 			<div id="tab-books">
-				<h1>Content of books I'm reading</h1>
 				<div id="books-data"></div>
 				<div id="pagination-container"></div>
 			</div>
