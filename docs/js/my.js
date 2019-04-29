@@ -8,11 +8,13 @@ $(document).ready(function() {
 	function simpleTemplating(data) {
 		var html ='';
 		$.each(data, function(index, item){
+			html += '<div class="column">';
 			html += '<div class="card">';
-			html += '<img src="img_avatar.png" alt="Avatar" style="width:100%">';
-			html += '<div class="container">';
+			html += '<img src="img_avatar.png" alt="Avatar" style="width:100%"></img>';
+			html += '<div class="card_container">';
 			html += '<h4><b>'+ item.name +'</b></h4>';
-			html += '<p>'+item.author +'</p';
+			html += '<p>'+item.author +'</p>';
+			html += '</div>';
 			html += '</div>';
 			html += '</div>';
 		});
