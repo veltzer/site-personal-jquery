@@ -1,0 +1,2 @@
+- load the entire data before doing all stuff instead of using the ajax
+	method which is really tuned for real pagination.
