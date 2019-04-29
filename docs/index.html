@@ -4,38 +4,13 @@
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
 		<meta content="utf-8" http-equiv="encoding"/>
 		<title>Welcome to Mark Veltzer's site</title>
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
 		<script type="text/javascript" src="js/pagination.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#tabs').tabslet({
-					animation: true,
-				});
-				dataContainer=$('#books-data');
-				$('#pagination-container').pagination({
-					dataSource: "books-data.json",
-					locator: 'items',
-					totalNumberLocator: function(response) {
-						return response.items.length;
-					},
-					pageSize: 4,
-					ajax: {
-						beforeSend: function() {
-							dataContainer.html('Loading data...');
-						}
-					},
-					callback: function(data, pagination) {
-						// template method of yourself
-						//var html = template(data);
-						dataContainer.html('name is '+data[0].name);
-					}
-				});
-			});
-		</script>
-		<link rel="stylesheet" href="normalize.css"></link>
-		<link rel="stylesheet" href="pagination.css"></link>
-		<link rel="stylesheet" href="my.css"></link>
+		<script type="text/javascript" src="js/my.js"></script>
+		<link rel="stylesheet" href="css/normalize.css"></link>
+		<link rel="stylesheet" href="css/pagination.css"></link>
+		<link rel="stylesheet" href="css/my.css"></link>
 	</head>
 	<body>
 		<div class="tabs" id="tabs">
