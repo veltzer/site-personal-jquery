@@ -50,3 +50,11 @@ BODY {
 	font-family: helvetica;
 	background: var(--body-background);
 }
+
+.bc-list-nostyle {
+	list-style: none;
+	list-style-position: outside;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+}

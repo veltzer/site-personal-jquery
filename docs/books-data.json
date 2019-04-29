@@ -1,28 +1,52 @@
-{
-	"items": [
-		{
-			"name": "name 1"
-		},
-		{
-			"name": "name 2"
-		},
-		{
-			"name": "name 3"
-		},
-		{
-			"name": "name 4"
-		},
-		{
-			"name": "name 5"
-		},
-		{
-			"name": "name 6"
-		},
-		{
-			"name": "name 7"
-		},
-		{
-			"name": "name 8"
-		}
-	]
-}
+[
+	{
+		"title": "The Four Horsemen",
+		"subtitle": "The Conversation That Sparked an Atheist Revolution",
+		"authors": [
+			"Christopher Hitchens",
+			"Richard Dawkins",
+			"Sam Harris",
+			"Daniel Dennett"
+		],
+		"forward": [
+			"Stephen Fry"
+		],
+		"narrators": [
+			"Christopher Hitchens",
+			"Richard Dawkins",
+			"Sam Harris",
+			"Daniel Dennett",
+			"Stephen Fry"
+		],
+		"length": "3 hrs and 4 mins",
+		"type": "Unabridged Audiobook",
+		"released": "03-19-19",
+		"language": "English",
+		"publisher": "Random House Audio",
+		"rating": 4.9,
+		"ratings_count": 124,
+		"added": "04-29-19",
+		"image": "images/419bg5JznoL._SL500_.jpg"
+	},
+	{
+		"title": "title 2"
+	},
+	{
+		"title": "title 3"
+	},
+	{
+		"title": "title 4"
+	},
+	{
+		"title": "title 5"
+	},
+	{
+		"title": "title 6"
+	},
+	{
+		"title": "title 7"
+	},
+	{
+		"title": "title 8"
+	}
+]
