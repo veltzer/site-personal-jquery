@@ -14,7 +14,7 @@
 				});
 				dataContainer=$('#books-data');
 				$('#pagination-container').pagination({
-					dataSource: "http://localhost:8000/books-data.json",
+					dataSource: "books-data.json",
 					locator: 'items',
 					totalNumberLocator: function(response) {
 						return response.items.length;
