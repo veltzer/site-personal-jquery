@@ -51,7 +51,7 @@ BODY {
 	background: var(--body-background);
 }
 
-.bc-list-nostyle {
+.list-nostyle {
 	list-style: none;
 	list-style-position: outside;
 	list-style-image: none;

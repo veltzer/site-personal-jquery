@@ -14,7 +14,7 @@ $(document).ready(function() {
 			html += '<div class="card_container">';
 			html += '<h3>'+ item.title+'</h3>';
 			html += '<h4>'+ item.subtitle+'</h4>';
-			html += '<ul class="bc-list-nostyle">';
+			html += '<ul class="list-nostyle">';
 			html += '<li>By: '+item.authors+'</li>';
 			html += '<li>Narrated by: '+item.narrators+'</li>';
 			html += '<li>Length: '+item.length+'</li>';
