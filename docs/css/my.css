@@ -8,39 +8,36 @@
 }
 
 /* the whole top bar */
-.tabs > ul {
+.tabs > .header {
 	list-style: none outside none;
 	padding-left: 0;
 	margin: 0;
 	background: var(--top-bar-background);
 }
 
-/* the whole cell of each selection */
-.tabs > ul > li {
-	border-style: none;
-	margin: 0 10px 0 0;
+/* each selection */
+.tabs > .header > * {
+	color: var(--top-bar-color);
 	display: inline-block;
+	padding: 14px 24px;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 300;
 }
 
 /* only the active cell */
-.tabs > ul > li.active {
-	border-bottom: 4px solid var(--selected-underline) !important; 
+.tabs > .header > .active {
+	border-bottom: 4px solid var(--selected-underline) !important;
 }
 
-/* and actually references */
-.tabs > ul > li > a {
-	color: var(--top-bar-color);
-	display: block;
-	font-size: 18px;
-	font-weight: 300;
-	padding: 14px 24px;
-	text-decoration: none;
-	/* this means that if the link it selected it will not have a border outline */
+/* and the actual references */
+.tabs > .header > * > a {
+	/* this means that if a link is selected it will not have a border outline */
 	outline: none;
 }
 
 /* content of each tab */
-.tabs > div {
+.tabs > .tab {
 	padding: 14px 24px;
 }
 
