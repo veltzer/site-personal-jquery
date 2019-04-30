@@ -10,3 +10,7 @@ the pagination widget:
 the normalize css:
 	https://necolas.github.io/normalize.css/
 	I now have version 8.0.1
+
+the destyle css:
+	https://nicolas-cusan.github.io/destyle.css/
+	I now have version 1.0.5
