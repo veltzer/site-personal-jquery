@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *.stamp
+/.pydmt/
 
 # C extensions
 *.so
